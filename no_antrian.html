@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Klinik Atlantic</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #2c3e50;
+            color: white;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .sidebar h2 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+        }
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+        .sidebar a i {
+            margin-right: 10px;
+        }
+        .sidebar .contact {
+            margin-top: auto;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .main-content .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .main-content .header i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .main-content .header h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .queue-card {
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .queue-card h4 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .queue-card .number {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+        .queue-card .button {
+            background-color: #00b894;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .sidebar a.dashboard:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img alt="Klinik Atlantic Logo" src="logo.jpg" />
+        <h2>Klinik Atlantic</h2>
+        <p>Welcome, Admin</p>
+        <a class="active" href="index.html" class="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-user"></i> Manajemen Pasien</a>
+        <a href="#"><i class="fas fa-file-medical"></i> Data Rekam Medis</a>
+        <a href="dokter.html"><i class="fas fa-user-md"></i> Manajemen Dokter</a>
+        <a href="#"><i class="fas fa-cash-register"></i> Kasir Pembayaran</a>
+        <a href="#"><i class="fas fa-chart-line"></i> Laporan</a>
+        <div class="contact">
+            <p>klinikatlantic@gmail.com</p>
+            <p>(+62) 813-8712-718</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <i class="fas fa-user"></i>
+            <h3>Nomor Antrian</h3>
+        </div>
+        <div class="queue-card">
+            <h4>ANTRIAN</h4>
+            <div class="number">0</div>
+            <button class="button">Ambil Nomor</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

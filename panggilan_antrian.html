@@ -1,0 +1,323 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Klinik Atlantic Dashboard
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #2c3e50;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            align-self: center;
+        }
+        .sidebar h2 {
+            margin: 10px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+        .sidebar a i {
+            margin-right: 10px;
+        }
+        .sidebar .contact {
+            margin-top: auto;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .header .breadcrumb {
+            font-size: 14px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            font-size: 18px;
+            margin: 0 0 20px 0;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+        }
+        .stat {
+            background-color: #f4f7fc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .stat i {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .stat h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .stat p {
+            font-size: 14px;
+            margin: 5px 0 0 0;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .pagination .info {
+            font-size: 14px;
+        }
+        .pagination .controls {
+            display: flex;
+            align-items: center;
+        }
+        .pagination .controls button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .pagination .controls button:hover {
+            background-color: #34495e;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+   <img alt="Klinik Atlantic Logo" height="100" src="logo.jpg" width="100"/>
+   <h2>
+    Klinik Atlantic
+   </h2>
+   <p>
+    Welcome, Admin
+   </p>
+   <a class="active" href="index.html">
+    <i class="fas fa-tachometer-alt">
+    </i>
+    Dashboard
+   </a>
+   <a href="#">
+    <i class="fas fa-user-injured">
+    </i>
+    Manajemen Pasien
+   </a>
+   <a href="#">
+    <i class="fas fa-file-medical">
+    </i>
+    Data Rekam Medis
+   </a>
+   <a href="dokter.html">
+    <i class="fas fa-user-md">
+    </i>
+    Manajemen Dokter
+   </a>
+   <a href="#">
+    <i class="fas fa-cash-register">
+    </i>
+    Kasir Pembayaran
+   </a>
+   <a href="#">
+    <i class="fas fa-chart-line">
+    </i>
+    Laporan
+   </a>
+   <div class="contact">
+    <p>
+     klinikatlantic@gmail.com
+    </p>
+    <p>
+     +62 813-8273-7218
+    </p>
+   </div>
+  </div>
+  <div class="main-content">
+   <div class="header">
+    <h1>
+     Pengolahan Antrian
+    </h1>
+    <div class="breadcrumb">
+     <a href="index.html">
+      Dashboard
+     </a>
+     &gt;
+     <span>
+      Antrian
+     </span>
+    </div>
+   </div>
+   <div class="content">
+    <div class="card">
+     <div class="stats row">
+      <div class="stat col-md-3">
+       <i class="fas fa-users">
+       </i>
+       <h3>
+        Jumlah Antrian
+       </h3>
+       <p>
+        3
+       </p>
+      </div>
+      <div class="stat col-md-3">
+       <i class="fas fa-user-check">
+       </i>
+       <h3>
+        Antrian Selesai
+       </h3>
+       <p>
+        1
+       </p>
+      </div>
+      <div class="stat col-md-3">
+       <i class="fas fa-user-clock">
+       </i>
+       <h3>
+        Antrian Sedang
+       </h3>
+       <p>
+        1
+       </p>
+      </div>
+      <div class="stat col-md-3">
+       <i class="fas fa-user-times">
+       </i>
+       <h3>
+        Sisa Antrian
+       </h3>
+       <p>
+        3
+       </p>
+      </div>
+     </div>
+     <div class="table-container">
+      <table class="table table-striped">
+       <thead>
+        <tr>
+         <th>
+          Nomor Antrian
+         </th>
+         <th>
+          Pasien
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          1
+         </td>
+         <td>
+          <i class="fas fa-user">
+          </i>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          2
+         </td>
+         <td>
+          <i class="fas fa-user">
+          </i>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          3
+         </td>
+         <td>
+          <i class="fas fa-user">
+          </i>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <div class="pagination">
+       <div class="info">
+        Showing 1 to 3 of 3 entries
+       </div>
+       <div class="controls">
+        <button class="btn btn-secondary">
+         Previous
+        </button>
+        <button class="btn btn-secondary">
+         Next
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+ </body>
+</html>
